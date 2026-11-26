@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios M Y S | Brilla con estilo</title>
+    <meta name="description" content="Accesorios M Y S: accesorios en oro laminado, dorados y baño de rodio. Brilla con estilo y elegancia.">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+
+        html, body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #FDF2E9 !important;
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            color: #5D4037;
+        }
+
+        header {
+            background-color: #FBE9E7 !important;
+            padding: 30px 15px;
+            border-bottom: 3px solid #d4af37;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            color: #E26D5C !important;
+            font-size: 50px;
+            margin: 0;
+        }
+
+        header p {
+            color: #A67C52;
+            font-weight: bold;
+            font-size: 19px;
+        }
+
+        nav ul {
+            list-style: none !important;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            color: #E26D5C;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            background: white;
+            padding: 8px 14px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #E26D5C !important;
+            font-size: 32px;
+        }
+
+        h3 {
+            color: #A67C52;
+            font-size: 22px;
+        }
+
+        section {
+            background-color: white;
+            margin: 15px auto;
+            padding: 20px 15px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 15px #F5CBA7;
+            width: 92%;
+            max-width: 1000px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px;
+            border: 3px solid #d4af37;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .tarjeta {
+            background: #FFF8F0;
+            border: 2px solid #F5CBA7;
+            border-radius: 18px;
+            padding: 15px;
+            width: 100%;
+            max-width: 260px;
+        }
+
+        .precio {
+            color: #E26D5C;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .promo {
+            background-color: #F1948A !important;
+            color: white;
+        }
+
+        .promo h2, .promo h3 {
+            color: white !important;
+        }
+
+        .boton, button {
+            background-color: #F1948A;
+            color: white;
+            border: none;
+            padding: 13px 28px;
+            border-radius: 20px;
+            font-size: 17px;
+            font-weight: bold;
+            font-family: 'Quicksand', sans-serif;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        select, input {
+            padding: 12px;
+            border-radius: 10px;
+            border: 2px solid #F5CBA7;
+            width: 100%;
+            max-width: 350px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .calculadora-contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            text-align: left;
+        }
+
+        .calculadora-contenedor > div {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .resultado-calculadora {
+            background: #FDF2E9;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px dashed #d4af37;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .valor-total {
+            font-size: 28px;
+            color: #E26D5C;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #FBE9E7;
+            color: #A67C52;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            .tarjeta {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Accesorios M Y S</h1>
+    <p>Brilla con estilo y elegancia</p>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#calculadora">Calculadora</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- 1. PORTADA -->
+    <section id="inicio" class="portada">
+        <div>
+            <h2>Bienvenida a M Y S</h2>
+            <p>¿Buscas accesorios hermosos, elegantes y a buen precio? ¡Estás en el lugar correcto!</p>
+            <p><strong>Oro Laminado • Dorado • Baño de rodio</strong></p>
+            <a href="#productos" class="boton">Conocer productos</a>
+        </div>
+
+        <img src="img/portada.jpg" alt="Accesorios M Y S">
+    </section>
+
+    <!-- 2. NOSOTROS -->
+    <section id="nosotros">
+        <h2>Conoce nuestro emprendimiento</h2>
+
+        <img src="img/portada.jpg" alt="Nuestro emprendimiento">
+
+        <p>Somos un emprendimiento dedicado a ofrecer accesorios de excelente calidad, pensando siempre en las necesidades de nuestras clientas.</p>
+
+        <p>Nuestro propósito es brindar una experiencia especial, con atención personalizada y mucho compromiso. Cada pieza la elegimos pensando en que te sientas hermosa y segura.</p>
+
+        <p><strong>¿Qué nos diferencia?</strong> Calidad, precios justos y atención por WhatsApp.</p>
+
+        <a href="#productos" class="boton">Conoce nuestros productos</a>
+    </section>
+
+    <!-- 3. CATÁLOGO -->
+    <section id="productos">
+        <h2>Nuestro Catálogo</h2>
+        <p>Oro Laminado, dorado y de la mejor calidad.</p>
+
+        <div class="catalogo">
+
+            <div class="tarjeta">
+                <img src="img/arete.jpg" alt="Aretes dorados">
+                <h3>Aretes Dorados</h3>
+                <p>Aretes elegantes para todos los días.</p>
+                <p class="precio">$50.000</p>
+                <a href="#contacto" class="boton">Consultar</a>
+            </div>
+
+            <div class="tarjeta">
+                <img src="img/cadena.jpg" alt="Cadena dorada">
+                <h3>Cadena Dorada</h3>
+                <p>Cadena delicada y resistente.</p>
+                <p class="precio">$135.000</p>
+                <a href="#contacto" class="boton">Consultar</a>
+            </div>
+
+            <div class="tarjeta">
+                <img src="img/pulsera.jpg" alt="Pulsera dorada">
+                <h3>Pulsera Dorada</h3>
+                <p>Pulsera que enamora y combina con todo.</p>
+                <p class="precio">$98.000</p>
+                <a href="#contacto" class="boton">Consultar</a>
+            </div>
+
+            <div class="tarjeta">
+                <img src="img/anillo.jpg" alt="Anillo dorado">
+                <h3>Anillo Oro Laminado</h3>
+                <p>Anillo fino y delicado.</p>
+                <p class="precio">$80.000</p>
+                <a href="#contacto" class="boton">Consultar</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. COLECCIÓN RODIO -->
+    <section id="rodio">
+        <h2>Colección Baño de Rodio</h2>
+        <p>Brillo espejo, no se pela y dura muchísimo más.</p>
+
+        <div class="catalogo">
+
+            <div class="tarjeta">
+                <img src="img/anillorodio.jpg" alt="Anillo rodio">
+                <h3>Anillo Rodio Dorado</h3>
+                <p class="precio">$45.000</p>
+                <a href="#contacto" class="boton">Consultar</a>
+            </div>
+
+            <div class="tarjeta">
+                <img src="img/areterodio.jpg" alt="Arete rodio">
+                <h3>Arete Rodio Dorado</h3>
+                <p class="precio">$48.000</p>
+                <a href="#contacto" class="boton">Consultar</a>
+            </div>
+
+            <div class="tarjeta">
+                <img src="img/cadenarodio.jpg" alt="Cadena rodio">
+                <h3>Cadena Rodio Dorado</h3>
+                <p class="precio">$55.000</p>
+                <a href="#contacto" class="boton">Consultar</a>
+            </div>
+
+            <div class="tarjeta">
+                <img src="img/pulserarodio.jpg" alt="Pulsera rodio">
+                <h3>Pulsera Rodio Dorado</h3>
+                <p class="precio">$50.000</p>
+                <a href="#contacto" class="boton">Consultar</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. PROMOCIONES -->
+    <section id="promociones" class="promo">
+        <h2>¡Promoción Especial!</h2>
+
+        <img src="img/cadenarodio.jpg" alt="Promoción cadena rodio">
+
+        <h3>Lleva 2 y paga 1 en colección Rodio</h3>
+
+        <p>Por esta semana, si llevas una cadena en baño de rodio, te llevas un arete de regalo. ¡Solo para nuestras clientas M Y S!</p>
+
+        <a href="#contacto" class="boton">¡Quiero mi promo!</a>
+    </section>
+
+    <!-- 6. CALCULADORA -->
+    <section id="calculadora">
+
+        <div class="calculadora-encabezado">
+            <span>COTIZA TU PEDIDO</span>
+            <h2>Calcula el valor de tu compra</h2>
+            <p>Ingresa los datos de tu pedido para conocer el valor estimado.</p>
+        </div>
+
+        <form action="/api/calculadora" method="POST" class="calculadora-contenedor">
+
+            <div>
+                <h3>Información del pedido</h3>
+
+                <label for="producto">Selecciona un producto:</label><br><br>
+
+                <select id="producto" name="producto" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="1">Aretes Dorados - $50.000</option>
+                    <option value="2">Cadena Dorada - $135.000</option>
+                    <option value="3">Pulsera Dorada - $98.000</option>
+                    <option value="4">Anillo Oro Laminado - $80.000</option>
+                    <option value="5">Anillo Rodio Dorado - $45.000</option>
+                    <option value="6">Arete Rodio Dorado - $48.000</option>
+                    <option value="7">Cadena Rodio Dorado - $55.000</option>
+                    <option value="8">Pulsera Rodio Dorado - $50.000</option>
+                </select>
+
+                <br><br>
+
+                <label for="cantidad">Cantidad:</label><br><br>
+
+                <input
+                    type="number"
+                    id="cantidad"
+                    name="cantidad"
+                    placeholder="Ingresa la cantidad"
+                    min="1"
+                    step="1"
+                    required
+                >
+
+                <br><br>
+
+                <button type="submit">Calcular pedido</button>
+            </div>
+
+        </form>
+
+        <p><small>El valor calculado corresponde al precio del producto seleccionado multiplicado por la cantidad solicitada. Las promociones se consultan directamente por WhatsApp.</small></p>
+
+    </section>
+
+    <!-- 7. CONTACTO -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <p>Escríbenos y te atendemos con amor.</p>
+
+        <p>🟢 <a href="https://wa.me/573008894076">WhatsApp: +57 300 889 4076</a></p>
+
+        <p>📸 <a href="https://instagram.com/accesoriosmys">Instagram: @accesoriosmys</a></p>
+
+        <p>✉️ Correo: accesoriosmys@gmail.com</p>
+
+        <p><strong>Ubicación:</strong> Barranquilla, Colombia</p>
+
+        <a href="https://wa.me/573008894076" class="boton">🟢 Escríbenos por WhatsApp</a>
+    </section>
+
+</main>
+
+<!-- 8. PIE DE PÁGINA -->
+<footer>
+    <p>© 2026 Accesorios M Y S - Hecho con amor</p>
+    <p>📸 Instagram | 🟢 WhatsApp | ✉️ Correo</p>
+</footer>
+
+</body>
+</html>

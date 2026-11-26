@@ -1,0 +1,103 @@
+/* REGLA PARA QUE NADA SE RUEDA PARA UN LADO */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #FDF2E9;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: #5D4037;
+}
+header {
+    background-color: #FBE9E7;
+    padding: 30px 15px;
+    border-bottom: 3px solid #d4af37;
+}
+header h1 {
+    font-family: 'Playfair Display', serif;
+    color: #E26D5C;
+    font-size: 50px;
+    margin: 0;
+}
+header p { color: #A67C52; font-weight: bold; font-size: 19px; }
+nav ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+nav li { margin: 0; }
+nav a { color: #E26D5C; text-decoration: none; font-weight: bold; font-size: 17px; background: white; padding: 8px 14px; border-radius: 20px; display: inline-block; }
+h2 { font-family: 'Playfair Display', serif; color: #E26D5C; font-size: 32px; }
+h3 { color: #A67C52; font-size: 22px; }
+section {
+    background-color: white;
+    margin: 15px auto;
+    padding: 20px 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #F5CBA7;
+    width: 92%;
+    max-width: 1000px;
+}
+/* FOTOS QUE YA NO SE SALEN */
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #d4af37;
+    display: block;
+    margin: 10px auto;
+}
+.catalogo { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+.tarjeta {
+    background: #FFF8F0;
+    border: 2px solid #F5CBA7;
+    border-radius: 18px;
+    padding: 15px;
+    width: 100%;
+    max-width: 260px;
+}
+.precio { color: #E26D5C; font-weight: bold; font-size: 22px; }
+.promo { background-color: #F1948A; color: white; }
+.promo h2, .promo h3 { color: white; }
+.boton, button {
+    background-color: #F1948A;
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+}
+select, input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #F5CBA7;
+    width: 100%;
+    max-width: 350px;
+    font-family: 'Quicksand', sans-serif;
+}
+.calculadora-contenedor { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; text-align: left; }
+.resultado-calculadora { background: #FDF2E9; padding: 20px; border-radius: 15px; border: 2px dashed #d4af37; width: 100%; max-width: 350px; }
+.valor-total { font-size: 28px; color: #E26D5C; font-weight: bold; }
+footer { background-color: #FBE9E7; color: #A67C52; font-weight: bold; padding: 15px; }
+
+/* PARA CELULAR - iPhone y Android */
+@media (max-width: 600px) {
+    header h1 { font-size: 32px; }
+    h2 { font-size: 26px; }
+    nav a { font-size: 14px; padding: 6px 10px; }
+    section { width: 95%; margin: 10px auto; }
+    .tarjeta { max-width: 100%; }
+}
+
+/* PARA TABLET - iPad */
+@media (min-width: 601px) and (max-width: 900px) {
+    header h1 { font-size: 42px; }
+    .tarjeta { max-width: 45%; }
+}
